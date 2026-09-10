@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #f5f1e8; background: #11101e; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 80% 0%, #2b2148 0, transparent 35rem), #11101e; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .45; }
+header { height: 82px; padding: 0 max(24px, calc((100% - 1180px)/2)); display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #ffffff17; background: #11101ed9; }
+.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #b995f0; transform: rotate(45deg); color: #d8befc; font: 26px 'Libre Caslon Display', serif; }
+.brand-mark::first-letter { transform: rotate(-45deg); }
+h1, h2 { font-family: 'Libre Caslon Display', serif; font-weight: 400; margin: 0; }
+h1 { font-size: 22px; }.eyebrow { margin: 0 0 3px; color: #ab8bd9; text-transform: uppercase; letter-spacing: .16em; font-size: 10px; font-weight: 700; }
+main { max-width: 1180px; margin: auto; padding: 52px 24px 70px; }
+.intro { display: flex; justify-content: space-between; gap: 30px; align-items: end; margin-bottom: 38px; }
+.intro h2 { font-size: clamp(36px, 5vw, 58px); line-height: 1.05; max-width: 620px; }
+.intro > p { color: #aaa6b8; line-height: 1.65; max-width: 410px; margin: 0; }
+.layout { display: grid; grid-template-columns: 300px 1fr; gap: 28px; align-items: start; }
+aside { display: grid; gap: 20px; }
+.panel, .tracker-card, .empty { border: 1px solid #ffffff17; background: #1a1829d9; border-radius: 10px; }
+.panel { padding: 20px; }
+h3 { margin: 0; font-size: 16px; }.section-heading, .group-heading, .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.section-heading > span { padding: 2px 8px; border-radius: 20px; color: #bea3e4; background: #a375df20; font-size: 12px; }
+.inline-form { display: flex; gap: 8px; margin: 18px 0 12px; }
+input, select { width: 100%; border: 1px solid #ffffff20; border-radius: 6px; background: #100f1b; color: #f5f1e8; padding: 10px 11px; outline: none; }
+input:focus, select:focus { border-color: #a982df; box-shadow: 0 0 0 3px #a982df1f; }
+.primary { border: 0; border-radius: 6px; background: #a982df; color: #171020; padding: 10px 15px; font-weight: 700; }
+.primary:hover { background: #bea3e7; }.wide { width: 100%; margin-top: 4px; }
+.category-list { display: grid; gap: 4px; }.category-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 10px; border-left: 2px solid #8f6cc5; color: #d9d5df; }
+.icon-button { border: 0; background: transparent; color: #837f91; font-size: 20px; line-height: 1; padding: 5px 8px; }.icon-button:hover { color: #f0b1b1; }
+.muted { color: #85818f; font-size: 13px; }.tracker-form { margin-top: 18px; display: grid; gap: 13px; }.tracker-form label { display: grid; gap: 6px; color: #aaa6b8; font-size: 12px; font-weight: 600; }
+.value-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.trackers { min-width: 0; }.tracker-group + .tracker-group { margin-top: 32px; }.group-heading { margin-bottom: 13px; }.group-heading h3 { font-family: 'Libre Caslon Display', serif; font-size: 24px; }.group-heading span { color: #85818f; font-size: 12px; }
+.card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }.tracker-card { padding: 18px; }.tracker-card h4 { margin: 0; font-size: 16px; }
+.meter { height: 5px; margin: 20px 0; border-radius: 8px; overflow: hidden; background: #0e0d17; }.meter span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #7d5ab4, #d0a7f2); transition: width .2s ease; }
+.counter { display: grid; grid-template-columns: 42px 1fr 42px; align-items: center; text-align: center; }.counter button { height: 42px; border-radius: 7px; border: 1px solid #ffffff1f; color: #d8cced; background: #242137; font-size: 24px; }.counter button:hover:not(:disabled) { border-color: #a982df; }
+.counter strong { font: 34px 'Libre Caslon Display', serif; }.counter span { margin-left: 6px; color: #85818f; font-size: 14px; }
+.empty { padding: 74px 20px; text-align: center; color: #918c9e; }.empty span { display: block; color: #a982df; font-size: 30px; margin-bottom: 14px; }.empty h3 { color: #e5e0e9; font: 26px 'Libre Caslon Display', serif; }.empty p { margin: 8px 0 0; }
+.error { display: flex; justify-content: space-between; align-items: center; margin: -18px 0 24px; padding: 12px 16px; border: 1px solid #d5787866; border-radius: 7px; background: #5b252547; color: #f0b5b5; }.error button { border: 0; background: none; color: inherit; font-size: 20px; }
+footer { padding: 25px; border-top: 1px solid #ffffff12; color: #716d7b; text-align: center; font-size: 12px; }.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+@media (max-width: 760px) { header { height: 70px; padding: 0 18px; }.brand-mark { width: 35px; height: 35px; } main { padding: 36px 16px 50px; }.intro { display: block; margin-bottom: 28px; }.intro > p { margin-top: 16px; }.layout { grid-template-columns: 1fr; }.card-grid { grid-template-columns: 1fr; } aside { order: 1; }.trackers { order: 2; }.panel { padding: 17px; } }
